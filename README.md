@@ -10,4 +10,12 @@
 
 所有图片：/interface/public/yushuapp/?service=Index.getAllImages
 
+群主公告：/interface/public/yushuapp/?service=Index.getAdminnoticeInfo&user_id=5,其中字段praise_id为null时表示尚未点赞
+
+物业人事：/interface/public/yushuapp/?service=Index.getpersonnelInfo
+
 小区公约webview:/admin/webview/convention_display
+
+轮播图webview:/admin/webview/slide_display/slide_id/8
+
+群主公告webview:/admin/webview/adminnotice_display/adminnotice_id/2
