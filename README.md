@@ -12,9 +12,20 @@
 
 **`所有图片接口`**：/interface/public/yushuapp/?service=Index.getAllImages
 
+**`图片上传接口`**：/interface/public/yushuapp/?service=Upload.Go
+
+**`图片上传测试页面`**：/interface/public/yushuapp/upload.html
+
 **`群主公告接口`**：/interface/public/yushuapp/?service=Index.getAdminnoticeInfo&user_id=5,其中字段praise_id为null时表示尚未点赞
 
 **`物业人事接口`**：/interface/public/yushuapp/?service=Index.getpersonnelInfo
+
+**`所有投票接口`**：/interface/public/yushuapp/?service=Index.getVoteInfo&user_id=5&page=1,其中字段praise_id为null时表示尚未点赞
+
+**`投票操作接口`**：/interface/public/yushuapp/?service=Index.doVote&user_id=5&vote_id=5&&vote_option_id=49
+
+**`点赞操作`**：/interface/public/yushuapp/?service=Index.doPraise&user_id=5&praise_type=vote&&praise_item_id=1,
+其中praise_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
 
 **`小区公约webview`**：/admin/webview/convention_display
 
