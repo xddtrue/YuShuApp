@@ -6,6 +6,8 @@
 
 **`更新用户信息接口`**：/interface/public/yushuapp/?service=User.updateUserInfo&user_id=7&user_nickname=&user_name=&user_name_set=&user_sex=&user_headpic=&user_tel=&user_tel_set=&user_birthday=
 
+**`根据userID获取用户信息接口`**：/interface/public/yushuapp/?service=User.getBaseInfo&user_id=5
+
 **`所有视频接口`**：/interface/public/yushuapp/?service=Index.getAllVideos
 
 **`所有图片接口`**：/interface/public/yushuapp/?service=Index.getAllImages
