@@ -22,12 +22,14 @@
 
 **`所有投票接口`**：/interface/public/yushuapp/?service=Index.getVoteInfo&user_id=5&page=1,其中字段praise_id为null时表示尚未点赞
 
+**`获取投票详情`**：/interface/public/yushuapp/?service=Index.getVoteInfoById&vote_id=5&user_id=21
+
 **`投票操作接口`**：/interface/public/yushuapp/?service=Index.doVote&user_id=5&vote_id=5&&vote_option_id=49
 
 **`点赞操作`**：/interface/public/yushuapp/?service=Index.doPraise&user_id=5&praise_type=vote&&praise_item_id=1,
 其中praise_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
 
-**`获取赞和评论列表`**：/interface/public/yushuapp/?service=Index.getPraiseAndComment&user_id=5&type=adminnotice&item_id=1
+**`获取评论列表`**：/interface/public/yushuapp/?service=Index.getCommentList&user_id=5&type=adminnotice&item_id=1&page=1
 
 **`小区公约webview`**：/admin/webview/convention_display
 
