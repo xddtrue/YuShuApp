@@ -6,7 +6,7 @@
 
 **`更新用户信息接口`**：/interface/public/yushuapp/?service=User.updateUserInfo&user_id=7&user_nickname=&user_name=&user_name_set=&user_sex=&user_headpic=&user_tel=&user_tel_set=&user_birthday=
 
-**`根据userID获取用户信息接口`**：/interface/public/yushuapp/?service=User.getBaseInfo&user_id=5
+**`根据userID获取用户信息接口`**：/interface/public/yushuapp/?service=User.getBaseInfo&user_id=21
 
 **`所有视频接口`**：/interface/public/yushuapp/?service=Index.getAllVideos
 
@@ -16,20 +16,23 @@
 
 **`图片上传测试页面`**：/interface/public/yushuapp/upload.html
 
-**`群主公告接口`**：/interface/public/yushuapp/?service=Index.getAdminnoticeInfo&user_id=5,其中字段praise_id为null时表示尚未点赞
+**`群主公告接口`**：/interface/public/yushuapp/?service=Index.getAdminnoticeInfo&user_id=21,其中字段praise_id为null时表示尚未点赞
 
 **`物业人事接口`**：/interface/public/yushuapp/?service=Index.getpersonnelInfo
 
-**`所有投票接口`**：/interface/public/yushuapp/?service=Index.getVoteInfo&user_id=5&page=1,其中字段praise_id为null时表示尚未点赞
+**`所有投票接口`**：/interface/public/yushuapp/?service=Index.getVoteInfo&user_id=21&page=1,其中字段praise_id为null时表示尚未点赞
 
-**`获取投票详情`**：/interface/public/yushuapp/?service=Index.getVoteInfoById&vote_id=5&user_id=21
+**`获取投票详情`**：/interface/public/yushuapp/?service=Index.getVoteInfoById&vote_id=21&user_id=21
 
-**`投票操作接口`**：/interface/public/yushuapp/?service=Index.doVote&user_id=5&vote_id=5&&vote_option_id=49
+**`投票操作`**：/interface/public/yushuapp/?service=Index.doVote&user_id=21&vote_id=5&&vote_option_id=49
 
-**`点赞操作`**：/interface/public/yushuapp/?service=Index.doPraise&user_id=5&praise_type=vote&&praise_item_id=1,
+**`点赞操作`**：/interface/public/yushuapp/?service=Index.doPraise&user_id=21&praise_type=vote&&praise_item_id=1,
 其中praise_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
 
-**`获取评论列表`**：/interface/public/yushuapp/?service=Index.getCommentList&user_id=5&type=adminnotice&item_id=1&page=1
+**`评论操作`**：/interface/public/yushuapp/?service=Index.doComment&user_id=21&comment_type=adminnotice&&comment_item_id=2&comment_desc=sdfd,
+           其中comment_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
+
+**`获取评论列表`**：/interface/public/yushuapp/?service=Index.getCommentList&user_id=21&type=adminnotice&item_id=1&page=1
 
 **`小区公约webview`**：/admin/webview/convention_display
 
