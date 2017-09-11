@@ -27,6 +27,8 @@
 **`点赞操作`**：/interface/public/yushuapp/?service=Index.doPraise&user_id=5&praise_type=vote&&praise_item_id=1,
 其中praise_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
 
+**`获取赞和评论列表`**：/interface/public/yushuapp/?service=Index.getPraiseAndComment&user_id=5&type=adminnotice&item_id=1
+
 **`小区公约webview`**：/admin/webview/convention_display
 
 **`轮播图webview`**：/admin/webview/slide_display/slide_id/8
