@@ -33,11 +33,19 @@
 
 **`获取评论列表`**：/interface/public/yushuapp/?service=Index.getCommentList&user_id=21&type=adminnotice&item_id=1&page=1
 
+**`获取闲置转让列表`**：/interface/public/yushuapp/?service=Index.getTransferInfo&page=1
+
 **`小区公约webview`**：/admin/webview/convention_display
 
 **`轮播图webview`**：/admin/webview/slide_display/slide_id/8
 
 **`群主公告webview`**：/admin/webview/adminnotice_display/adminnotice_id/2
+
+**`闲置转让发帖`**：/interface/public/yushuapp/?service=Index.doTransfer&transfer_title=aa&transfer_desc=33&transfer_type=1
+,其中transfer_type-1:馈赠2：置换，图片支持多文件上传name为filelist[]
+
+**`闲置转让测试发帖地址`**：/interface/public/yushuapp/uploadmulti.html
+
 
 **`---------------------------------------------邻里----------------------------------------------------`**
 
