@@ -1,12 +1,19 @@
+
+**`---------------------------------------------用户-------------------------------------------------`**
+
 **`登陆接口`**：/interface/public/yushuapp/?service=User.login&account=12104A&pwd=888888 
 
-**`首页获取信息接口`**：/interface/public/yushuapp/?service=Index.getIndexInfo 
-
-**`业主申请接口`**：/interface/public/yushuapp/?service=User.register&user_name=ssdf&user_floor=21&user_room=504 
+**`业主申请接口`**：/interface/public/yushuapp/?service=User.register&user_name=ssdf&user_floor=21&user_room=504
 
 **`更新用户信息接口`**：/interface/public/yushuapp/?service=User.updateUserInfo&user_id=7&user_nickname=&user_name=&user_name_set=&user_sex=&user_headpic=&user_tel=&user_tel_set=&user_birthday=
 
 **`根据userID获取用户信息接口`**：/interface/public/yushuapp/?service=User.getBaseInfo&user_id=21
+
+
+
+**`---------------------------------------------首页-------------------------------------------------`**
+
+**`首页获取信息接口`**：/interface/public/yushuapp/?service=Index.getIndexInfo 
 
 **`所有视频接口`**：/interface/public/yushuapp/?service=Index.getAllVideos
 
@@ -20,9 +27,27 @@
 
 **`物业人事接口`**：/interface/public/yushuapp/?service=Index.getpersonnelInfo
 
-**`所有投票接口`**：/interface/public/yushuapp/?service=Index.getVoteInfo&user_id=21&page=1,其中字段praise_id为null时表示尚未点赞
+**`所有投票接口`**：/interface/public/yushuapp/?service=Index.getVoteInfo&user_id=21&page=1
 
 **`获取投票详情`**：/interface/public/yushuapp/?service=Index.getVoteInfoById&vote_id=21&user_id=21
+
+**`获取评论列表`**：/interface/public/yushuapp/?service=Index.getCommentList&user_id=21&type=adminnotice&item_id=1&page=1
+
+**`小区公约webview`**：/admin/webview/convention_display
+
+**`轮播图webview`**：/admin/webview/slide_display/slide_id/8
+
+**`群主公告webview`**：/admin/webview/adminnotice_display/adminnotice_id/2
+
+**`---------------------------------------------邻里----------------------------------------------------`**
+
+**`获取楼号列表`**：/interface/public/yushuapp/?service=User.getFloorInfo
+
+**`根据楼号获取户列表`**：/interface/public/yushuapp/?service=User.getRoomListByFloor&user_floor=21
+
+**`根据户获取用户列表`**：/interface/public/yushuapp/?service=User.getUserListByRoom&user_floor=21&user_room=504
+
+**`------------------------------------------投票，点赞，评论（操作）--------------------------------------`**
 
 **`投票操作`**：/interface/public/yushuapp/?service=Index.doVote&user_id=21&vote_id=5&&vote_option_id=49
 
@@ -32,10 +57,7 @@
 **`评论操作`**：/interface/public/yushuapp/?service=Index.doComment&user_id=21&comment_type=adminnotice&&comment_item_id=2&comment_desc=sdfd,
            其中comment_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
 
-**`获取评论列表`**：/interface/public/yushuapp/?service=Index.getCommentList&user_id=21&type=adminnotice&item_id=1&page=1
 
-**`小区公约webview`**：/admin/webview/convention_display
 
-**`轮播图webview`**：/admin/webview/slide_display/slide_id/8
 
-**`群主公告webview`**：/admin/webview/adminnotice_display/adminnotice_id/2
+
