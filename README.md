@@ -37,7 +37,9 @@
 
 **`获取闲置转让列表`**：/interface/public/yushuapp/?service=Index.getTransferInfo&page=1
 
-**`头部信息webview`**：/admin/webview/head_display/type/vote,其中type- 物业人事：personnel 民意投票：vote 邻里：user 图片：image 视频：video
+
+
+**`获取头部信息`**：/interface/public/yushuapp/?service=Index.getHeadInfo&type=vote,其中type- 物业人事：personnel 民意投票：vote 邻里：user 图片：image 视频：video
 
 **`小区公约webview`**：/admin/webview/convention_display
 
