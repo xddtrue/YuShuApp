@@ -33,7 +33,11 @@
 
 **`获取评论列表`**：/interface/public/yushuapp/?service=Index.getCommentList&user_id=21&type=adminnotice&item_id=1&page=1
 
+**`获取点赞列表`**：/interface/public/yushuapp/?service=Index.getPraiseList&user_id=21&type=adminnotice&item_id=2
+
 **`获取闲置转让列表`**：/interface/public/yushuapp/?service=Index.getTransferInfo&page=1
+
+**`头部信息webview`**：/admin/webview/head_display/type/vote,其中type- 物业人事：personnel 民意投票：vote 邻里：user 图片：image 视频：video
 
 **`小区公约webview`**：/admin/webview/convention_display
 
