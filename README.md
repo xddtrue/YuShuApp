@@ -35,9 +35,6 @@
 
 **`获取点赞列表`**：/interface/public/yushuapp/?service=Index.getPraiseList&user_id=21&type=adminnotice&item_id=2
 
-**`获取闲置转让列表`**：/interface/public/yushuapp/?service=Index.getTransferInfo&page=1
-
-
 
 **`获取头部信息`**：/interface/public/yushuapp/?service=Index.getHeadInfo&type=vote,其中type- 物业人事：personnel 民意投票：vote 邻里：user 图片：image 视频：video
 
@@ -47,12 +44,18 @@
 
 **`群主公告webview`**：/admin/webview/adminnotice_display/adminnotice_id/2
 
-**`闲置转让发帖`**：/interface/public/yushuapp/?service=Index.doTransfer&transfer_title=aa&transfer_desc=33&transfer_type=1
+**`获取闲置转让列表`**：/interface/public/yushuapp/?service=Index.getTransferInfo&page=1
+
+**`闲置转让发帖`**：/interface/public/yushuapp/?service=Index.doTransfer&transfer_title=aa&transfer_desc=33&transfer_type=1&user_id=21
 ,其中transfer_type-1:馈赠2：置换，图片支持多文件上传name为filelist[]
+
+**`获取最新动态或公共建议列表`**：/interface/public/yushuapp/?service=Index.getPostInfo&page=1&post_type=1,其中post_type-1:最新动态2：公共建议
+
+**`最新动态或公共建议发帖`**：/interface/public/yushuapp/?service=Index.doPost&post_title=aa&post_desc=33&post_type=1&user_id=21，图片支持多文件上传name为filelist[]
 
 **`闲置转让测试发帖地址`**：/interface/public/yushuapp/uploadmulti.html
 
-**`根据类别获取装修指南标签`**：/interface/public/yushuapp/?service=Index.getGuideTypeInfo&page=1&category=1
+**`根据类别获取装修指南标签`**：/interface/public/yushuapp/?service=Index.getGuideTypeInfo&category=1
 
 **`获取装修指南`**：/interface/public/yushuapp/?service=Index.getGuideInfo&page=1&guide_type_id=1
 
@@ -67,7 +70,15 @@
 
 **`根据户获取用户列表`**：/interface/public/yushuapp/?service=User.getUserListByRoom&user_floor=21&user_room=504
 
-**`------------------------------------------投票，点赞，评论（操作）--------------------------------------`**
+**`---------------------------------------------个人中心----------------------------------------------------`**
+
+**`我的收藏`**：/interface/public/yushuapp/?service=User.getMyCollection&user_id=21&page=1
+
+**`我的发布`**：/interface/public/yushuapp/?service=User.getMyPost&type=3&user_id=21,其中type-1:最新动态 2:闲置转让 3:公共建议
+
+
+
+**`------------------------------------------投票，点赞，评论,收藏,删除（操作）--------------------------------------`**
 
 **`投票操作`**：/interface/public/yushuapp/?service=Index.doVote&user_id=21&vote_id=5&&vote_option_id=49
 
@@ -75,7 +86,12 @@
 其中praise_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
 
 **`评论操作`**：/interface/public/yushuapp/?service=Index.doComment&user_id=21&comment_type=adminnotice&&comment_item_id=2&comment_desc=sdfd,
-           其中comment_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
+其中comment_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post
+           
+**`收藏操作`**：/interface/public/yushuapp/?service=Index.doCollection&user_id=21&collection_type=vote&&collection_item_id=1,
+ 其中collection_type:装修指南-guide,民意投票-vote,闲置转让-transfer,御墅论坛-post  
+         
+**`删除操作`**： /interface/public/yushuapp/?service=Index.deleteMyDo&type=praise&item_id=1        
 
 
 
