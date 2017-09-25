@@ -23,7 +23,7 @@
 
 **`图片上传测试页面`**：/interface/public/yushuapp/upload.html
 
-**`群主公告接口`**：/interface/public/yushuapp/?service=Index.getAdminnoticeInfo&user_id=21,其中字段praise_id为null时表示尚未点赞
+**`群主公告接口`**：/interface/public/yushuapp/?service=Index.getAdminnoticeInfo&user_id=21&page=1&type=1,其中type-1:群主公告 2：民政汇总
 
 **`物业人事接口`**：/interface/public/yushuapp/?service=Index.getpersonnelInfo
 
@@ -51,6 +51,12 @@
 ,其中transfer_type-1:馈赠2：置换，图片支持多文件上传name为filelist[]
 
 **`闲置转让测试发帖地址`**：/interface/public/yushuapp/uploadmulti.html
+
+**`根据类别获取装修指南标签`**：/interface/public/yushuapp/?service=Index.getGuideTypeInfo&page=1&category=1
+
+**`获取装修指南`**：/interface/public/yushuapp/?service=Index.getGuideInfo&page=1&guide_type_id=1
+
+**`装修指南webview`**:/admin//webview/guide_display/guide_id/4
 
 
 **`---------------------------------------------邻里----------------------------------------------------`**
