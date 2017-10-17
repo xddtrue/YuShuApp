@@ -44,9 +44,9 @@
 **`闲置转让发帖`**：/interface/public/yushuapp/?service=Index.doTransfer&transfer_title=aa&transfer_desc=33&transfer_type=1&user_id=21
 ,其中transfer_type-1:馈赠2：置换，图片支持多文件上传name为filelist[]
 
-**`获取最新动态或公共建议列表`**：/interface/public/yushuapp/?service=Index.getPostInfo&page=1&post_type=1,其中post_type-1:最新动态2：公共建议
+**`获取最新动态或公共建议列表`**：/interface/public/yushuapp/?service=Index.getPostInfo&page=1&post_type=1,其中post_type--1:最新动态2：公共建议 3：装修杂谈
 
-**`最新动态或公共建议发帖`**：/interface/public/yushuapp/?service=Index.doPost&post_title=aa&post_desc=33&post_type=1&user_id=21，图片支持多文件上传name为filelist[]
+**`最新动态或公共建议发帖`**：/interface/public/yushuapp/?service=Index.doPost&post_title=aa&post_desc=33&post_type=1&user_id=21，图片支持多文件上传name为filelist[]，其中post_type--1:最新动态2：公共建议 3：装修杂谈
 
 **`闲置转让测试发帖地址`**：/interface/public/yushuapp/uploadmulti.html
 
@@ -57,6 +57,20 @@
 **`装修指南webview`**:/admin//webview/guide_display/guide_id/4
 
 **`视频webview:`**:/admin/webview/video_display/video_id/1
+
+**`获取装修指南轮播图`**：/interface/public/yushuapp/?service=Index.getGuideSlideInfo
+
+**`获取周边便民标签`**：/interface/public/yushuapp/?service=Index.getAroundTypeInfo
+
+**`获取周边便民`**：/interface/public/yushuapp/?service=Index.getAroundInfo&page=1&around_type_id=7
+
+**`周边便民webview`**:/admin//webview/around_display/around_id/7
+
+**`获取周边便民轮播图`**：/interface/public/yushuapp/?service=Index.getAroundSlideInfo
+
+
+
+
 
 
 **`---------------------------------------------邻里----------------------------------------------------`**
@@ -71,7 +85,7 @@
 
 **`我的收藏`**：/interface/public/yushuapp/?service=User.getMyCollection&user_id=21&page=1
 
-**`我的发布`**：/interface/public/yushuapp/?service=User.getMyPost&type=3&user_id=21,其中type-1:最新动态 2:闲置转让 3:公共建议
+**`我的发布`**：/interface/public/yushuapp/?service=User.getMyPost&type=3&user_id=21,其中type-1:最新动态 2:闲置转让 3:公共建议 4:装修杂谈
 
 **`删除我的发布`**：/interface/public/yushuapp/?service=Index.deletePost&&item_id=1&user_id=21&type=post
 
